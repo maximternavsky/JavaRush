@@ -15,12 +15,30 @@ public class Solution {
     }
 
     public static int toOctal(int decimalNumber) {
-        //напишите тут ваш код
+        if(decimalNumber > 0){
+            int vosm = 0;
+            int i = 0;
+            while(decimalNumber != 0){
+                vosm += decimalNumber % 8 * Math.pow(10, i);
+                decimalNumber /= 8;
+                i++;
+            }
+            return vosm;
+        }
         return 0;
     }
 
     public static int toDecimal(int octalNumber) {
-        //напишите тут ваш код
+        if(octalNumber > 0){
+            int vosm = 0;
+            int i = 0;
+            while(octalNumber != 0){
+                vosm += octalNumber % 10 * Math.pow(8, i);
+                octalNumber /= 10;
+                i++;
+            }
+            return vosm;
+        }
         return 0;
     }
 }

@@ -14,7 +14,7 @@ public class Building {
     //напишите тут ваш код
 
     public static void main(String[] args) {
-        Building building = new Building("Ресторан");
-        building.initialize("Барбершоп");
+
+
     }
 }

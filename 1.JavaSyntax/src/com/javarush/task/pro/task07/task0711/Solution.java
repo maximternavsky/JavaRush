@@ -14,6 +14,6 @@ public class Solution {
     }
 
     public static void fillArray(Integer[] array, int value, int begin, int end) {
-        //напишите тут ваш код
+        Arrays.fill(array, begin, end, 3);
     }
 }

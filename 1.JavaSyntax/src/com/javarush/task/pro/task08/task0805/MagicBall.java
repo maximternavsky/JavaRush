@@ -13,7 +13,18 @@ public class MagicBall {
     private static final String VERY_DOUBTFUL = "Весьма сомнительно";
 
     public static String getPrediction() {
-        //напишите тут ваш код
-        return null;
+        Random rn = new Random();
+        int val = rn.nextInt(8);
+        switch (val){
+            case 0  : return CERTAIN;
+            case 1  : return DEFINITELY;
+            case 2  : return MOST_LIKELY;
+            case 3  : return OUTLOOK_GOOD;
+            case 4  : return ASK_AGAIN_LATER;
+            case 5  : return TRY_AGAIN;
+            case 6  : return NO;
+            case 7  : return VERY_DOUBTFUL;
+            default : return null;
+        }
     }
 }

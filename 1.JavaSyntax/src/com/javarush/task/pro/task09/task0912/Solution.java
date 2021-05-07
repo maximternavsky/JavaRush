@@ -16,12 +16,28 @@ public class Solution {
     }
 
     public static String checkProtocol(String url) {
-        //напишите тут ваш код
+        if(url.startsWith("https")){
+            return "https";
+        }
+        if(url.startsWith("http")){
+            return "http";
+        }
         return "неизвестный";
     }
 
     public static String checkDomain(String url) {
-        //напишите тут ваш код
+        if(url.endsWith(".com")){
+            return "com";
+        }
+        if(url.endsWith(".net")){
+            return "net";
+        }
+        if(url.endsWith(".org") ){
+            return "org";
+        }
+        if(url.endsWith(".ru")){
+            return "ru";
+        }
         return "неизвестный";
     }
 }

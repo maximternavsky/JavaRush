@@ -14,7 +14,9 @@ public class Solution {
     }
 
     public static boolean equal(String first, String second) {
-        //напишите тут ваш код
-        return false;
+        String a1 = first.intern();
+        String a2 = second.intern();
+
+        return a1 == a2;
     }
 }

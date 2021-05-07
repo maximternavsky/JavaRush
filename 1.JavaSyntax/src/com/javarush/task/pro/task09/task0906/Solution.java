@@ -15,12 +15,38 @@ public class Solution {
     }
 
     public static String toBinary(int decimalNumber) {
-        //напишите тут ваш код
-        return null;
+        if(decimalNumber > 0){
+            String vosm = "";
+            int i = 0;
+            while(decimalNumber != 0){
+                vosm += decimalNumber % 2;
+                decimalNumber /= 2;
+                i++;
+            }
+            return vosm;
+        }
+        return "";
     }
 
     public static int toDecimal(String binaryNumber) {
-        //напишите тут ваш код
+        if(binaryNumber == "" || binaryNumber == null){
+            return 0;
+        }
+        if(binaryNumber.length() > 0) {
+            int dec = 0;
+            int temp = 0;
+            char[] ch = binaryNumber.toCharArray();
+            for (int i = 0; i < binaryNumber.length(); i++) {
+                if (ch[i] == '1') {
+                    temp = 1;
+                } else {
+                    temp = 0;
+                }
+                dec += temp * Math.pow(2, i);
+            }
+            return dec;
+        }
+
         return 0;
     }
 }

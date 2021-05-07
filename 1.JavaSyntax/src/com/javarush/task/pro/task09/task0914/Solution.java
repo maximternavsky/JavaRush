@@ -13,7 +13,8 @@ public class Solution {
     }
 
     public static String changePath(String path, String jdk) {
-        //напишите тут ваш код
-        return null;
+        int first = path.indexOf("jdk");
+        int last = path.indexOf("/", first+1);
+        return path.substring(0, first) + jdk + path.substring(last);
     }
 }

@@ -9,7 +9,17 @@ public class Skyscraper {
     public static final String SKYSCRAPER_WAS_BUILD_FLOORS_COUNT = "Небоскреб построен. Количество этажей - ";
     public static final String SKYSCRAPER_WAS_BUILD_DEVELOPER = "Небоскреб построен. Застройщик - ";
 
-    //напишите тут ваш код
+    public Skyscraper(){
+        System.out.println(SKYSCRAPER_WAS_BUILD);
+    }
+
+    public Skyscraper(int i){
+        System.out.println(SKYSCRAPER_WAS_BUILD_FLOORS_COUNT + i);
+    }
+
+    public Skyscraper(String s){
+        System.out.println(SKYSCRAPER_WAS_BUILD_DEVELOPER + s);
+    }
 
     public static void main(String[] args) {
         Skyscraper skyscraper = new Skyscraper();

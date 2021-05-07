@@ -15,6 +15,6 @@ public class Pair {
     }
 
     public void swap() {
-        //напишите тут ваш код
+        //this.x =
     }
 }

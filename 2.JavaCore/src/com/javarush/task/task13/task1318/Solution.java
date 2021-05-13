@@ -10,15 +10,19 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        try (BufferedReader reader = new BufferedReader(new FileInputStream(scanner.nextLine()))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line + "\n");
-            }
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        try (BufferedReader reader = new BufferedReader(new FileInputStream("wewe")) {
+//            String line;
+//            while ((line = reader.readLine()) != null) {
+//                System.out.println(line + "\n");
+//            }
+//        }
+//        catch (IOException e) {
+//            e.printStackTrace();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 }

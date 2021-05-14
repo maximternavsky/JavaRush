@@ -1,9 +1,11 @@
 package com.javarush.task.task14.task1419;
 
+import java.beans.IntrospectionException;
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 /* 
 Нашествие исключений
@@ -28,7 +30,15 @@ public class Solution {
             exceptions.add(e);
         }
 
-        //напишите тут ваш код
+        exceptions.add(new RuntimeException());
+        exceptions.add(new NoSuchFieldException());
+        exceptions.add(new NoSuchElementException());
+        exceptions.add(new IndexOutOfBoundsException());
+        exceptions.add(new InterruptedIOException());
+        exceptions.add(new InstantiationException());
+        exceptions.add(new InterruptedException());
+        exceptions.add(new ClassCastException());
+        exceptions.add(new IllegalAccessException());
 
     }
 }
